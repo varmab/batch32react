@@ -5,7 +5,8 @@ class Welcome extends Component{
         super();
 
         this.state={
-            clicks:0
+            clicks:0,
+            x:2
         }
     }
 
@@ -16,8 +17,9 @@ class Welcome extends Component{
     }
 
     render(){
+        var year=this.props.year;
         return (
-            <h1 onClick={this.updateClicks}>Welcome to {this.props.title} - ({this.state.clicks})</h1>
+            <h1 onClick={this.updateClicks}>Welcome to {this.props.title} {year} - ({this.state.clicks})</h1>
         )
     }
 }
