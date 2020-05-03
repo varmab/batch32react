@@ -1,12 +1,5 @@
 import React, { Component } from 'react'
 
-export class Friend extends Component{
-    render(){
-        return(
-            <h1>Friend</h1>
-        )
-    }
-}
 
 class Friends extends Component {
     constructor(){

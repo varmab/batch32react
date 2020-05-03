@@ -5,6 +5,8 @@ import './App.css';
 import Welcome from './Welcome'
 import Counter from './Counter'
 import Friends from './Friends'
+import GreetingGenerator from './GreetingGenerator'
+import Todos from './Todos'
 
 class App extends Component {
   render(){
@@ -13,7 +15,7 @@ class App extends Component {
         <header className="App-header">
           <Welcome title="Varma" year={2020} password="123456" />
         </header>
-        <Friends/>
+        <Todos/>
       </div>
     );
   }
