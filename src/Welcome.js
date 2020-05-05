@@ -20,7 +20,9 @@ class Welcome extends Component{
     render(){
         var year=this.props.year;
         return (
-            <h1 onClick={this.updateClicks}>Welcome to {this.props.title} {year} - ({this.state.clicks})</h1>
+            <React.Fragment>
+                <h1 onClick={this.updateClicks}> {this.props.children} {this.props.title} {year} - ({this.state.clicks})</h1>
+            </React.Fragment>
         )
     }
 }
