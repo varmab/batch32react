@@ -9,6 +9,7 @@ import GreetingGenerator from './GreetingGenerator'
 import Todos from './Todos'
 import MyLibrary from './MyLibrary'
 import Users from './Users'
+import Library from './Library/Library'
 
 class App extends Component {
   render(){
@@ -19,7 +20,7 @@ class App extends Component {
             Good Bye
           </Welcome>
         </header>
-        <Users/>
+        <Library/>
       </div>
     );
   }
